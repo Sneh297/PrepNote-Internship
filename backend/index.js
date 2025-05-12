@@ -19,6 +19,8 @@ app.use('/api/auth', require('./routes/authRoutes'));
 
 app.use('/api/test', require('./routes/testRoutes'));
 
+app.use('/api/flashCard', require('./routes/flashCardRoutes'));
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
